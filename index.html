@@ -1,43 +1,53 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <title>Mini Social</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <title>Mini Social</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <header class="topbar">
-        <h1>Mini Social</h1>
-    </header>
+<header>
+  <h1 class="logo">Mini Social</h1>
+</header>
 
-    <main class="container">
+<main class="feed">
 
-        <section class="post">
-            <div class="post-header">
-                <img src="assets/avatar.png" alt="Avatar" class="avatar">
-                <span class="username">Juliano</span>
-            </div>
+  <article class="post">
+    <div class="post-header">
+      <img src="assets/avatar.png" class="avatar">
+      <div>
+        <span class="name">Juliano Dev</span>
+        <span class="username">@julianocode</span>
+      </div>
+    </div>
 
-            <p class="post-text">
-                Estudando algoritmo, decisão e repetição em JavaScript!
-            </p>
+    <p class="post-text">
+      Hoje começamos a desenvolver nosso próprio algoritmo de interação social usando JavaScript 🚀
+    </p>
 
-            <div class="post-actions">
-                <button onclick="curtir()">Curtir</button>
-                <span id="contador-curtidas">0 curtidas</span>
-            </div>
-        </section>
+    <div class="post-actions">
+      <button id="likeBtn">Curtir</button>
+      <span id="likeCount">0</span>
+    </div>
 
-        <section class="comments">
-            <h3>Comentários</h3>
-            <input id="comentario" placeholder="Escreva um comentário">
-            <button onclick="adicionarComentario()">Enviar</button>
-            <ul id="lista-comentarios"></ul>
-        </section>
+    <section class="comments">
+      <div class="comment">
+        <img src="assets/avatar.png" class="avatar-small">
+        <p>Excelente iniciativa! 🔥</p>
+      </div>
 
-    </main>
+      <div class="comment">
+        <img src="assets/avatar.png" class="avatar-small">
+        <p>Vamos dominar decisão e repetição!</p>
+      </div>
+    </section>
 
-    <script src="js/script.js"></script>
+  </article>
+
+</main>
+
+<script src="js/script.js"></script>
 </body>
 </html>
